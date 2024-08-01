@@ -1,4 +1,7 @@
+@import 'styles/variables.scss';
+
 .container {
   position: relative;
   padding: 1rem 12rem;
+  color: $black-500;
 }
