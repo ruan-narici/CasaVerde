@@ -1,0 +1,51 @@
+@import 'styles/variables.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $white-500;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  width: 380px;
+  height: 200px;
+  overflow: hidden;
+
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+
+    img {
+      position: absolute;
+      top: -10px;
+    }
+  }
+
+  &__infos {
+    padding: 1.5rem;
+    z-index: 2;
+
+    &__title {
+      font-size: 2rem;
+      font-family: "Elsie Swash Caps", serif;
+      margin-bottom: .5rem;
+    }
+  
+    &__currency {
+      margin-bottom: 1.5rem;
+    }
+  
+    &__buy {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      color: $yellow-500;
+      transition: .3s all;
+  
+      &:hover {
+        cursor: pointer;
+        filter: brightness(90%);
+      }
+    }
+  }
+}
