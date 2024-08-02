@@ -1,4 +1,4 @@
-import ImageTree from 'components/ImageTree';
+import { ReactComponent as ITree } from 'assets/img/tree.svg';
 import InputEmail from 'components/InputEmail';
 import styles from './Card_1.module.scss';
 
@@ -12,7 +12,7 @@ function Card_1() {
         <InputEmail />
       </div>
       <div>
-        <ImageTree />
+        <ITree />
       </div>
     </section>
   );
